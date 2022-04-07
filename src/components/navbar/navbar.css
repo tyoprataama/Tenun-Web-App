@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+
+.tenun_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.bagshop{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.tenun_navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tenun_navbar-links_logo {
+    margin-right: 2rem;
+    font-family: 'Raleway', sans-serif;
+    height: 40px;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.tenun_navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.tenun_navbar-menu_container-links a{
+    font-family: 'Raleway', sans-serif;
+}
+
+.tenun_navbar-links_container a{
+    font-family: 'Raleway', sans-serif;
+}
+
+.tenun_navbar-links_container p,
+.tenun_navbar-sign p,
+.tenun_navbar-menu_container p {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.tenun_navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.tenun_navbar-sign p {
+    font-family: var(--font-family);
+}
+
+.tenun_navbar-sign button,
+.tenun_navbar-menu_container button {
+    padding: 0.5rem 1rem;
+    color: #ffff;
+    background: #4D77FF;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.tenun_navbar-menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.tenun_navbar-menu svg {
+    cursor: pointer;
+}
+
+.tenun_navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 2);
+}
+
+.tenun_navbar-menu_container p {
+    margin: 1rem 0;
+}
+
+.tenun_navbar-menu_container-links-sign {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .tenun_navbar-links_container {
+        display: none;
+    }
+
+    .tenun_navbar-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .tenun_navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .tenun_navbar {
+        padding: 2rem
+    }
+
+    .tenun_navbar-sign {
+        display: none
+    }
+
+    .tenun_navbar-menu_container {
+        top: 20px;
+    }
+
+    .tenun_navbar-menu_container-links-sign {
+        display: block;
+    }
+}

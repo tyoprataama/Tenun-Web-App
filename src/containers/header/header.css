@@ -1,0 +1,167 @@
+.tenun_header{
+    display: flex;
+}
+
+.tenun_header-content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 5rem;
+}
+
+.tenun_header-content h1{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04cm;
+}
+
+.tenun_header-content p {
+    font-family: var(--font-family);
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--color-text);
+    margin-top: 1.5rem;
+}
+
+.tenun_header-content_people img{
+    max-width: 170px;
+}
+
+.tenun_header-content_input {
+    width: 100%;
+    margin: 2rem 0 1rem;
+    display: flex;
+}
+
+.tenun_header-content_input input {
+    flex: 2;
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 27px;
+    background: var(--color-footer);
+    border: 2px solid var(--color-foter);
+    padding: 0 1rem;
+    outline: none;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.tenun_header-content_input button{
+    flex: 0.6;
+    width: 100%;
+    max-height: 50px;
+    background: #4D77FF;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 27px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    padding: 0 1rem;
+    border: none;
+}
+
+.tenun_header-content_people {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.tenun_header-content_people img {
+    width: 181.79px;
+    height: 38px;
+}
+
+.tenun_header-content_people p {
+    margin: 0 0 0 1rem;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 38px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.tenun_header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tenun_header-image img {
+    max-width: 700px;
+    margin-right: -100px;
+    margin-top: -60px;
+}
+
+@media screen and (max-width: 1050px) {
+    .tenun_header {
+    flex-direction: column;
+    }
+    .tenun_header-content {
+    margin: 0 0 3rem;
+    }
+    .tenun_header-image img {
+    max-width: 550px;
+    align-items: center;
+    margin-left: -100px;
+    margin-top: 10px;
+}
+}
+
+@media screen and (max-width: 650px) {
+    .tenun_header h1{
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .tenun_header p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .tenun_header-content_people{
+        flex-direction: column;
+    }
+    .tenun_header-content_people p {
+        margin: 0;
+    }
+    .tenun_header-image img {
+    max-width: 450px;
+}
+    .tenun_header-content_input input,
+    .tenun_header-content_input button {
+        font-size: 16px;
+        line-height: 24px;
+}
+}
+
+@media screen and (max-width: 490px) {
+    .tenun_header h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .tenun_header p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .tenun_header-content_input input,
+    .tenun_header-content input button{
+        font-size: 12px;
+        line-height: 16px;
+    }}
